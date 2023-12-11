@@ -77,6 +77,7 @@ export default () => {
         page.redirect('/creer-un-nouveau-site')
       } else {
         store.mutations.setReposForAccount({
+          // @ts-ignore
           login: store.state.login,
           repos,
         })

@@ -54,7 +54,7 @@
 
   // @ts-ignore
   const setColor = e => {
-    theme.css = theme.css.replace(
+    theme.css = theme.css?.replace(
       /(?<before>(.*)--couleur-primaire(.*))(#[a-fA-F0-9]{6})(?<after>;(.*))/gs,
       `$<before>${e.target.value}$<after>`,
     )
